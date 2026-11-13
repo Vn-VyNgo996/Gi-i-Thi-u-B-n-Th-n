@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu bản thân - Ngô Chí Vỹ</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Phần tiêu đề */
+        header {
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.4)
+            ), url("https://images.unsplash.com/photo-1472120435266-53107fd0c44a?w=1600")
+            center/cover;
+
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        /* Nội dung chính */
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Phần giới thiệu và sở thích */
+        .profile {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .avatar {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .hobbies {
+            flex: 2;
+            min-width: 280px;
+            background-color: #e4edff;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #243b67;
+        }
+
+        .hobbies ul {
+            padding-left: 25px;
+        }
+
+        .hobbies li {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        /* Thời khóa biểu */
+        .schedule {
+            background-color: #eadbff;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            min-width: 600px;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 13px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #cdb4f6;
+        }
+
+        tr:hover {
+            background-color: #f3edff;
+        }
+
+        /* Mạng xã hội */
+        .social {
+            background-color: #e3f5dc;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .social a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: white;
+            color: #243b67;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .social a:hover {
+            background-color: #243b67;
+            color: white;
+        }
+
+        /* Chân trang */
+        footer {
+            text-align: center;
+            background-color: #243b67;
+            color: white;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .avatar img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Tiêu đề chính -->
+    <header>
+        <h1>Ngô Chí Vỹ</h1>
+        <p>Sinh viên IT - Luôn học hỏi, không ngừng cố gắng!</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Ảnh đại diện và sở thích -->
+        <section class="profile">
+
+            <div class="avatar">
+                <img src="images/vy.png"
+            alt="Ảnh đại diện Ngô Chí Vỹ">
+            </div>
+
+            <div class="hobbies">
+                <h2>Sở thích của mình</h2>
+
+                <ul>
+                    <li>Thích coi phim</li>
+                    <li>Đọc sách</li>
+                    <li>Nghe nhạc</li>
+                    <li>Tìm hiểu công nghệ và khám phá những điều mới</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- Thời khóa biểu -->
+        <section class="schedule">
+            <h2>Thời khóa biểu</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Thời gian</th>
+                        <th>Thứ 2</th>
+                        <th>Thứ 3</th>
+                        <th>Thứ 4</th>
+                        <th>Thứ 5</th>
+                        <th>Thứ 6</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Sáng</td>
+                        <td>Cấu trúc dữ liệu</td>
+                        <td>Lập trình Web</td>
+                        <td>Cơ sở dữ liệu</td>
+                        <td>Mạng máy tính</td>
+                        <td>Lập trình Java</td>
+                    </tr>
+
+                    <tr>
+                        <td>Chiều</td>
+                        <td>Toán rời rạc</td>
+                        <td>Hệ điều hành</td>
+                        <td>Cấu trúc dữ liệu</td>
+                        <td>Lập trình Web</td>
+                        <td>Cơ sở dữ liệu</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Liên kết mạng xã hội -->
+        <section class="social">
+            <h2>Kết nối với mình</h2>
+
+            <a href="https://facebook.com"
+               target="_blank">Facebook</a>
+
+            <a href="https://instagram.com"
+               target="_blank">Instagram</a>
+
+            <a href="https://github.com"
+               target="_blank">GitHub</a>
+
+            <a href="https://youtube.com"
+               target="_blank">YouTube</a>
+        </section>
+
+    </main>
+
+    <!-- Chân trang -->
+    <footer>
+        <p>© 2026 - Trang giới thiệu bản thân của Ngô Chí Vỹ</p>
+    </footer>
+
+</body>
+</html>
